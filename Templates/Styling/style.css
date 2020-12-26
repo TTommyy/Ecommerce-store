@@ -1,0 +1,218 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Home - nav */
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 5rem;
+   padding-left: 6%;
+   padding-right: 6%;
+   background: transparent;
+   z-index: 10;
+   position: fixed;
+   transition: ease 300ms;
+}
+
+.scroll-nav {
+   background: #131313;
+}
+
+.nav a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.nav h1 {
+   font-size: 1.9rem;
+   color: #fff;
+   font-weight: 500;
+}
+
+.nav-cart {
+   margin-top: 18%;
+   width: 2.15rem;
+}
+
+.burger-menu {
+   cursor: pointer;
+}
+
+.burger {
+   width: 1.75rem;
+   height: 0.19rem;
+   background: #fff;
+   border-radius: 15px;
+   transition: ease 300ms;
+}
+
+.burger::before, .burger::after {
+   content: "";
+   position: absolute;
+   width: 2.25rem;
+   height: 0.19rem;
+   background: #fff;
+   border-radius: 15px;
+   transition: ease 300ms;
+}
+
+.burger::before {
+   transform: translateY(-0.72rem);
+}
+
+.burger::after {
+   transform: translateY(0.72rem);
+}
+
+.burger-open .burger::before {
+   transform: rotate(45deg);
+}
+
+.burger-open .burger::after {
+   transform: rotate(-45deg);
+}
+
+.burger-open .burger {
+   background: transparent;
+}
+
+.nav-menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background: #1d1d1d;
+   position: fixed;
+   z-index: 4;
+   transition: ease 300ms;
+   left: -100%;
+}
+
+.nav-menu li {
+   margin-top: 19%;
+   margin-bottom: 5%;
+   list-style: none;
+   font-size: 1.33rem;
+   position: relative;
+   padding-bottom: 0.3rem;
+}
+
+.nav-menu li::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 0.14rem;
+   background: #E63946;
+   bottom: 0;
+   left: 0;
+   transform-origin: left;
+   transition: ease 300ms;
+   transform: scale(0);
+}
+
+.nav-menu li:hover::after {
+   transform: scale(1);
+}
+
+.nav-menu a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.openM {
+   left: 0%;
+}
+
+.nav-products {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background: #1d1d1d;
+   position: fixed;
+   z-index: 6;
+   transition: ease 300ms;
+   right: -100%;
+}
+
+.nav-products li {
+   margin-top: 19%;
+   margin-bottom: 5%;
+   list-style: none;
+   font-size: 1.33rem;
+   position: relative;
+   padding-bottom: 0.3rem;
+}
+
+.nav-products a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.products-open {
+   right: 0%;
+}
+
+.nav-back {
+   position: absolute;
+   width: 2rem;
+   left: 5.7%;
+   top: 15%;
+}
+
+/* Landing page */
+.lp {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+}
+
+.lp-img {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: -1;
+   object-fit: cover;
+}
+
+.lp h1 {
+   font-size: 4rem;
+   font-family: 'Lobster Two', cursive;
+   letter-spacing: 0.3rem;
+   color: #fff;
+   font-weight: 100;
+}
+
+.lp p {
+   color: #fff;
+   font-size: 0.77rem;
+   letter-spacing: 0.1rem;
+   line-height: 2.25rem;
+   font-weight: 100;
+   margin-left: 7.25%;
+   margin-right: 7.25%;
+   margin-top: 1.35rem;
+}
+
+.lp-scroll {
+   margin-top: 2.15rem;
+}
