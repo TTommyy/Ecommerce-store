@@ -8,6 +8,11 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
+button {
+   cursor: pointer;
+   outline: none;
+}
+
 /* Home - nav */
 .nav {
    display: flex;
@@ -489,4 +494,191 @@ body {
 
 .f-ig {
    width: 1.7em;
+}
+
+/* ACCESSORIES PAGE - MOBILE */
+/* Landing page - Accessories */
+.lp-a {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+}
+
+.lp-a-img {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   position: absolute;
+   z-index: -1;
+}
+
+.lp-img {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: -1;
+   object-fit: cover;
+}
+
+.lp-a h1 {
+   font-size: 4rem;
+   font-family: 'Lobster Two', cursive;
+   letter-spacing: 0.3rem;
+   color: #fff;
+   font-weight: 100;
+}
+
+.lp-a p {
+   color: #fff;
+   font-size: 0.85rem;
+   letter-spacing: 0.1rem;
+   line-height: 2.25rem;
+   font-weight: 100;
+   margin-left: 7.25%;
+   margin-right: 7.25%;
+   margin-top: 1rem;
+}
+
+.lp-a-scroll {
+   margin-top: 1.8rem;
+}
+
+/* Products */
+.products {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.product-card {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 70% 30%;
+   width: 84%;
+   height: 26.25rem;
+   background: #fff;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.03);
+   margin-top: 1.75rem;
+   background: #f6f6f6;
+}
+
+.product-img {
+   width: 13rem;
+   height: 8rem;
+   transform: rotate(-18deg);
+}
+
+.product-img-p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.product-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+}
+
+.product-info h1 {
+   font-size: 1.65rem;
+   font-weight: 600;
+}
+
+.product-info h3 {
+   font-size: 1.15rem;
+   font-weight: 200;
+   margin-top: 0.35rem;
+}
+
+.products-search {
+   display: flex;
+   width: 100%;
+   height: 3rem;
+   padding-left: 2rem;
+   margin-top: 4.5rem;
+}
+
+.search-bar {
+   all: initial;
+}
+
+.search-bar {
+   width: 39%;
+   height: 1.56rem;
+   border-bottom: 1.5px rgb(27, 27, 27) solid;
+   padding-bottom: 0.13rem;
+   color: black;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.9rem;
+   background: transparent;
+   transition: ease 300ms;
+}
+
+.search-hover {
+   width: 58%;
+}
+
+.search-button {
+   width: 3.9rem;
+   height: 1.78rem;
+   background: #000;
+   border: 1px #000 solid;
+   margin-left: 0.65rem;
+   color: #fff;
+   font-weight: 500;
+}
+
+.delete {
+   position: absolute;
+   margin-left: 11.1rem;
+   margin-top: 0.38rem;
+   width: 0.83rem;
+   filter: opacity(0%);
+   transition: ease 400ms;
+}
+
+.cross-hover {
+   filter: opacity(100%);
+}
+
+.pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 2rem;
+   margin-top: 3.5rem;
+}
+
+.pag-left {
+   width: 0.5rem;
+   margin-right: 1.35rem;
+}
+
+.pag-right {
+   width: 0.5rem;
+   margin-left: 0.6rem;
+}
+
+.pagination h3 {
+   margin-right: 0.75rem;
+}
+
+/* Footer */
+.section-4a {
+   margin-top: 7.5rem;
 }
