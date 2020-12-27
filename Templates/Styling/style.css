@@ -369,7 +369,7 @@ body {
    flex-direction: column;
    align-items: center;
    width: 100%;
-   height: 192.25rem;
+   height: 203.75rem;
    background: #EFEFEF;
 }
 
@@ -423,4 +423,70 @@ body {
 .offers-name {
    font-size: 2.5rem;
    margin-top: 6.5rem;
+}
+
+.view-more-offers {
+   font-size: 1.5rem;
+   margin-top: 3.5rem;
+   font-weight: 100;
+}
+
+.view-more-link {
+   color: #E63946;
+   text-decoration: none;
+   border-bottom: 0.12rem #E63946 solid;
+}
+
+/* Footer */
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 47rem;
+   background: #131313;
+}
+
+.f-info {
+   margin-top: 3.82rem;
+}
+
+.f-other {
+   margin-top: 4.1rem;
+}
+
+.f-info h1 {
+   font-size: 1.1rem;
+   color: #fff;
+   font-weight: 300;
+   margin-top: 2.15rem;
+}
+
+.f-other h1 {
+   font-size: 1.1rem;
+   color: #fff;
+   font-weight: 100;
+   margin-top: 2.15rem;
+}
+
+.f-socials {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 11.5rem;
+   height: 2.5rem;
+   margin-top: 6.2rem;
+}
+
+.f-fb {
+   width: 1.7em;
+}
+
+.f-twitter {
+   width: 1.7em;
+}
+
+.f-ig {
+   width: 1.7em;
 }
