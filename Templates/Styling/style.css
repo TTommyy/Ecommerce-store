@@ -682,3 +682,131 @@ button {
 .section-4a {
    margin-top: 7.5rem;
 }
+
+/* INDIVIDUAL PRODUCT PAGE */
+/* Landing page */
+.lp-p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background: #131313;
+}
+
+.lp-p-img {
+   width: 13.05rem;
+   height: 8.5rem;
+   margin-top: 4.25rem;
+}
+
+.lp-p-1 {
+   margin-top: 4rem;
+}
+
+.lp-p-1 h1 {
+   font-size: 1.5rem;
+   font-weight: 300;
+   color: #fff;
+}
+
+.lp-p-1 h2 {
+   font-size: 1.35rem;
+   font-weight: 100;
+   color: #fff;
+   margin-top: 0.4rem;
+}
+
+.lp-p-1 button {
+   width: 8.2rem;
+   height: 2.35rem;
+   background: #E63946;
+   border: 1px #E63946 solid;
+   border-radius: 3px;
+   color: #fff;
+   font-size: 0.9rem;
+   font-weight: 300;
+   margin-top: 1.75rem;
+}
+
+.lp-p-sep {
+   height: 2px;
+   width: 11.25rem;
+   background: #6D727C;
+   border-radius: 15px;
+   margin-top: 2rem;
+}
+
+.lp-p-link1, .lp-p-goto1 {
+   display: inline-block;
+}
+
+.lp-p-link2, .lp-p-goto2 {
+   display: inline-block;
+}
+
+.lp-p-link1 {
+   font-size: 0.82rem;
+   color: #fff;
+   font-weight: 100;
+}
+
+.lp-p-link2 {
+   font-size: 0.82rem;
+   color: #fff;
+   font-weight: 100;
+}
+
+.lp-p-first-link {
+   margin-top: 1.5rem;
+}
+
+.lp-p-sec-link {
+   margin-top: 0.38rem;
+}
+
+/* Detail section */
+.quality {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 37rem;
+   padding-left: 2.65rem;
+}
+
+.quality h1 {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-right: 5rem;
+}
+
+.quality-sep {
+   width: 4rem;
+   height: 3px;
+   background: #E63946;
+   border-radius: 15px;
+   margin-top: 2.3rem;
+}
+
+.quality p {
+   font-size: 0.85rem;
+   font-weight: 300;
+   line-height: 1.75rem;
+   margin-top: 2.65rem;
+   margin-right: 2.85rem;
+}
+
+.quality-button {
+   width: 10rem;
+   height: 2.88rem;
+   background: #E63946;
+   border-radius: 3px;
+   border: 1px #E63946 solid;
+   font-size: 1rem;
+   font-weight: 200;
+   color: #fff;
+   margin-top: 3rem;
+}
