@@ -903,7 +903,7 @@ button {
    display: flex;
    flex-direction: column;
    width: 100%;
-   height: 93rem;
+   height: 89rem;
    margin-top: 6rem;
 }
 
@@ -1119,4 +1119,75 @@ button {
    width: 19rem;
    background: #EFEFEF;
    margin-top: 0.37rem;
+}
+
+/* Similar products section */
+.other {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 68rem;
+   padding-left: 2.25rem;
+   margin-top: 4.5rem;
+}
+
+.other-title {
+   font-size: 2.18rem;
+   font-weight: 600;
+}
+
+.other-sep {
+   width: 4rem;
+   height: 3px;
+   background: #E63946;
+   border-radius: 15px;
+   margin-top: 2rem;
+}
+
+.other-img1 {
+   margin-top: 3.3rem;
+}
+
+.other-product1 h1 {
+   font-size: 2.25rem;
+   font-weight: 400;
+   margin-top: 1.4rem;
+}
+
+.other-product1 p {
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+
+.other-product1 h2 {
+   font-size: 1.75rem;
+   font-weight: 500;
+   margin-top: 1.25rem;
+}
+
+.other-img2 {
+   margin-top: 6.75rem;
+}
+
+.other-product2 h1 {
+   font-size: 2.25rem;
+   font-weight: 400;
+   margin-top: 1.4rem;
+}
+
+.other-product2 p {
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+
+.other-product2 h2 {
+   font-size: 1.75rem;
+   font-weight: 500;
+   margin-top: 1.25rem;
+}
+
+/* Footer */
+.section-9p {
+   margin-top: 7rem;
 }
