@@ -30,6 +30,18 @@ function cont() {
    goBack.addEventListener("click", () => {
       productsMenu.classList.remove("products-open");
    });
+
+   // Coupon
+   const coupon = document.getElementById("cart-coupon-input");
+   const price = document.querySelector(".c-recap-amm");
+   const couponWord = "Dog";
+   const couponButton = document.querySelector(".cart-coupon button");
+
+   couponButton.addEventListener("click", () => {
+      if (coupon.value == couponWord) {
+         price.innerHTML = "$49.99";
+      }
+   });
 }
 
 cont()
