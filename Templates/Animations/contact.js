@@ -37,6 +37,6 @@ function cont() {
    goBack.addEventListener("click", () => {
       productsMenu.classList.remove("products-open");
    });
-}
+};
 
 cont()

@@ -110,13 +110,17 @@ input {
 }
 
 .nav-menu li {
-   margin-top: 19%;
+   margin-top: 13%;
    margin-bottom: 5%;
    list-style: none;
    font-size: 1.33rem;
    position: relative;
    padding-bottom: 0.3rem;
    color: #fff;
+}
+
+.nav-menu li:first-child {
+   margin-top: 24%;
 }
 
 .nav-menu li::after {
@@ -183,6 +187,306 @@ input {
    width: 2rem;
    left: 5.7%;
    top: 15%;
+}
+
+#sign-in-link {
+   color: #E63946;
+}
+
+/* Sign in section */
+.sign-in {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #131313;
+   z-index: 15;
+   transition: ease 300ms;
+   right: -100%;
+}
+
+.sign-in-active {
+   right: 0%;
+}
+
+.sign-in-back {
+   position: absolute;
+   left: 4%;
+   top: 2.6%;
+}
+
+.sign-in-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 49vh;
+}
+
+.sign-in-text h1 {
+   font-size: 3.75rem;
+   color: #fff;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 100;
+   letter-spacing: 4px;
+   margin-top: 4.5rem;
+}
+
+.sign-in-text p {
+   font-size: 0.75rem;
+   color: #fff;
+   font-weight: 100;
+   margin-left: 10%;
+   margin-right: 10%;
+   line-height: 27px;
+   letter-spacing: 1px;
+   margin-top: 1rem;
+}
+
+.sign-ing-button {
+   width: 9rem;
+   height: 2.75rem;
+   background: #E63946;
+   border-radius: 3px;
+   border: 1px #E63946 solid;
+   font-size: 1rem;
+   color: #fff;
+   font-weight: 100;
+   margin-top: 1.88rem;
+}
+
+.sign-in-input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 51vh;
+}
+
+.sign-in-input-2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 89%;
+   height: 43vh;
+   background: #272727;
+   border-radius: 15px;
+}
+
+#sign-in-email {
+   width: 84%;
+   height: 3rem;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.88rem;
+   background: #424242;
+   border-radius: 7px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+
+#sign-in-email::placeholder {
+   color: rgb(197, 197, 197);
+}
+
+#sign-in-password {
+   width: 84%;
+   height: 3rem;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.88rem;
+   background: #424242;
+   border-radius: 7px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 0.85rem;
+}
+
+#sign-in-password::placeholder {
+   color: rgb(197, 197, 197);
+}
+
+.sign-in-input-btn {
+   width: 84%;
+   height: 3rem;
+   border-radius: 7px;
+   border: 1px #E63946 solid;
+   background: #E63946;
+   font-size: 1.1rem;
+   font-weight: 100;
+   color: #fff;
+   margin-top: 1.78rem;
+}
+
+.sign-in-input h3 {
+   font-size: 0.8rem;
+   font-weight: 100;
+   margin-top: 0.67rem;
+   font-weight: 100;
+}
+
+.sign-in-input a {
+   color: #B7B7B7;
+   text-decoration: none;
+}
+
+/* Sign up section */
+.sign-up2 {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #131313;
+   z-index: 15;
+   transition: ease 300ms;
+   top: -100%;
+}
+
+.sign-up-active {
+   top: 0%;
+}
+
+.sign-up-back {
+   position: absolute;
+   left: 4%;
+   top: 2.6%;
+}
+
+.sign-up-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 49vh;
+}
+
+.sign-up-text h1 {
+   font-size: 3.75rem;
+   color: #fff;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 100;
+   letter-spacing: 4px;
+   margin-top: 4.5rem;
+}
+
+.sign-up-text p {
+   font-size: 0.75rem;
+   color: #fff;
+   font-weight: 100;
+   margin-left: 10%;
+   margin-right: 10%;
+   line-height: 27px;
+   letter-spacing: 1px;
+   margin-top: 1rem;
+}
+
+.sign-up-button {
+   width: 9rem;
+   height: 2.75rem;
+   background: #E63946;
+   border-radius: 3px;
+   border: 1px #E63946 solid;
+   font-size: 1rem;
+   color: #fff;
+   font-weight: 100;
+   margin-top: 1.88rem;
+}
+
+.sign-up-input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 48vh;
+}
+
+.sign-up-input-2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 89%;
+   height: 51vh;
+   background: #272727;
+   border-radius: 15px;
+}
+
+#sign-up-email {
+   width: 84%;
+   height: 3rem;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.88rem;
+   background: #424242;
+   border-radius: 7px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 0.8rem;
+}
+
+#sign-up-email::placeholder {
+   color: rgb(197, 197, 197);
+}
+
+#sign-up-name {
+   width: 84%;
+   height: 3rem;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.88rem;
+   background: #424242;
+   border-radius: 7px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 0.8rem;
+}
+
+#sign-up-name::placeholder {
+   color: rgb(197, 197, 197);
+}
+
+#sign-up-password {
+   width: 84%;
+   height: 3rem;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.88rem;
+   background: #424242;
+   border-radius: 7px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 0.8rem;
+}
+
+#sign-up-password::placeholder {
+   color: rgb(197, 197, 197);
+}
+
+.sign-up-input-btn {
+   width: 84%;
+   height: 3rem;
+   border-radius: 7px;
+   border: 1px #E63946 solid;
+   background: #E63946;
+   font-size: 1.1rem;
+   font-weight: 100;
+   color: #fff;
+   margin-top: 1.7rem;
+}
+
+.sign-up-input h3 {
+   font-size: 0.8rem;
+   font-weight: 100;
+   margin-top: 0.67rem;
+   font-weight: 100;
+}
+
+.sign-up-input a {
+   color: #B7B7B7;
+   text-decoration: none;
 }
 
 /* Landing page */
@@ -1596,7 +1900,7 @@ input {
 #c-name {
    width: 89%;
    height: 3.62rem;
-   border: none;
+   border: 1px #F0F5F5 solid;
    border-radius: 10px;
    background: #F0F5F5;
    font-size: 0.95rem;
@@ -1609,7 +1913,7 @@ input {
 #c-email {
    width: 89%;
    height: 3.62rem;
-   border: none;
+   border: 1px #F0F5F5 solid;
    border-radius: 10px;
    background: #F0F5F5;
    font-size: 0.95rem;
@@ -1623,7 +1927,7 @@ input {
 #c-msg {
    width: 89%;
    height: 8.5rem;
-   border: none;
+   border: 1px #F0F5F5 solid;
    border-radius: 10px;
    background: #F0F5F5;
    font-size: 0.9rem;
