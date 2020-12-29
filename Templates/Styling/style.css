@@ -1431,3 +1431,197 @@ button {
    font-weight: 400;
    margin-left: 0.78rem;
 }
+
+/* CONTACT US PAGE */
+/* Landing section */
+.lp-g {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+}
+
+.lp-g-img {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: -1;
+   object-fit: cover;
+}
+
+.lp-g h1 {
+   font-size: 4rem;
+   font-family: 'Lobster Two', cursive;
+   letter-spacing: 0.3rem;
+   color: #fff;
+   font-weight: 100;
+}
+
+.lp-g p {
+   color: #fff;
+   font-size: 0.75rem;
+   letter-spacing: 0.1rem;
+   line-height: 2.25rem;
+   font-weight: 100;
+   margin-left: 3%;
+   margin-right: 3%;
+   margin-top: 1.35rem;
+}
+
+.lp-g-scroll {
+   margin-top: 2.2rem;
+}
+
+/* Contact */
+.c-info {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding-left: 6%;
+   margin-top: 3.85rem;
+}
+
+.c-title {
+   font-size: 2.4rem;
+   font-weight: 500;
+}
+
+.c-info p {
+   font-size: 0.85rem;
+   font-weight: 100;
+   line-height: 2.4rem;
+   margin-right: 2rem;
+   margin-top: 1.25rem;
+}
+
+.c-phone {
+   width: 1.8rem;
+}
+
+.c-env {
+   width: 1.8rem;
+}
+
+.c-map {
+   width: 1.8rem;
+}
+
+.c-phone-p h2 {
+   font-size: 0.95rem;
+   font-weight: 300;
+   margin-left: 2.6rem;
+}
+
+.c-email-p h2 {
+   font-size: 0.95rem;
+   font-weight: 300;
+   margin-left: 2.6rem;
+}
+
+.c-address-p h2 {
+   font-size: 0.95rem;
+   font-weight: 300;
+   margin-left: 2.6rem;
+}
+
+.c-phone-p {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 5% 95%;
+   grid-template-rows: 1fr;
+   width: 100%;
+   height: 3rem;
+   margin-top: 3rem;
+}
+
+.c-email-p {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 5% 95%;
+   grid-template-rows: 1fr;
+   width: 100%;
+   height: 3rem;
+   margin-top: 1.25rem;
+}
+
+.c-address-p {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 5% 95%;
+   grid-template-rows: 1fr;
+   width: 100%;
+   height: 3rem;
+   margin-top: 1.5rem;
+}
+
+/* Contact input */
+.c-input {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-top: 4.9rem;
+   padding-left: 6%;
+}
+
+#c-name {
+   width: 89%;
+   height: 3.62rem;
+   border: none;
+   border-radius: 10px;
+   background: #F0F5F5;
+   font-size: 0.95rem;
+   font-weight: 200;
+   padding-left: 1.4rem;
+   outline: none;
+   padding-right: 1.4rem;
+}
+
+#c-email {
+   width: 89%;
+   height: 3.62rem;
+   border: none;
+   border-radius: 10px;
+   background: #F0F5F5;
+   font-size: 0.95rem;
+   font-weight: 200;
+   padding-left: 1.4rem;
+   outline: none;
+   margin-top: 1rem;
+   padding-right: 1.4rem;
+}
+
+#c-msg {
+   width: 89%;
+   height: 8.5rem;
+   border: none;
+   border-radius: 10px;
+   background: #F0F5F5;
+   font-size: 0.9rem;
+   font-weight: 100;
+   padding-left: 1.4rem;
+   outline: none;
+   margin-top: 1rem;
+   padding-top: 0.9rem;
+   font-family: 'Poppins', sans-serif;
+   padding-right: 1.4rem;
+}
+
+.c-input button {
+   width: 10rem;
+   height: 2.83rem;
+   background: #E63946;
+   border: 1px #E63946 solid;
+   border-radius: 3px;
+   font-size: 1rem;
+   font-weight: 100;
+   color: #fff;
+   margin-top: 2rem;
+}
+
+/* Footer */
+.section-4g {
+   margin-top: 8.5rem;
+}
