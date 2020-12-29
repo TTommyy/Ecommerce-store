@@ -36,11 +36,23 @@ function cont() {
    const price = document.querySelector(".c-recap-amm");
    const couponWord = "Dog";
    const couponButton = document.querySelector(".cart-coupon button");
+   const couponDel = document.querySelector(".coupon-del");
+   const couponAlert = document.querySelector(".coupon-alert");
 
    couponButton.addEventListener("click", () => {
       if (coupon.value == couponWord) {
          price.innerHTML = "$49.99";
+         couponDel.classList.add("coupon-cancel");
+      } else {
+         couponAlert.style = "color: red";
+         setTimeout(() => couponAlert.style = "color: transparent", 3000);
       }
+   });
+
+   couponDel.addEventListener("click", () => {
+      coupon.value = "";
+      price.innerHTML = "$59.99";
+      couponDel.classList.remove("coupon-cancel");
    });
 }
 
