@@ -690,6 +690,10 @@ input {
    background: #EFEFEF;
 }
 
+.section-6-d {
+   display: none;
+}
+
 .offer-card {
    display: grid;
    grid-template-columns: 1fr;
@@ -2783,6 +2787,7 @@ input {
    /* Best offers section */
    .offers {
       display: flex;
+      flex-direction: column;
       align-items: center;
       width: 100%;
       height: 203.75rem;
@@ -2793,7 +2798,7 @@ input {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 70% 30%;
-      width: 30%;
+      width: 84%;
       height: 26.25rem;
       background: #fff;
       border-radius: 20px;
@@ -2851,6 +2856,118 @@ input {
       color: #E63946;
       text-decoration: none;
       border-bottom: 0.12rem #E63946 solid;
+   }
+
+   .section-6 {
+      display: none;
+   }
+
+   /* Best offers section - desktop */
+   .section-6-d {
+      display: block;
+   }
+
+   .offers-d {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 160vh;
+      background: #EFEFEF;
+   }
+
+   .offers-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 50%;
+      width: 100%;
+      height: 100vh;
+   }
+
+   .offers-cards-p1 {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+   }
+
+   .offers-cards-p2 {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+   }
+
+   .offers-cards-p1 > .offer-card-d:first-child {
+      width: 38.4%;
+   }
+
+   .offers-cards-p2 > .offer-card-d:last-child {
+      width: 38.4%;
+   }
+
+   .offer-card-d {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 60% 40%;
+      width: 26%;
+      height: 17rem;
+      background: #fff;
+      border-radius: 20px;
+      margin-top: 3.25rem;
+      box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+   }
+
+   .offers-img-d {
+      width: 7.75rem;
+      height: 5rem;
+      transform: rotate(-18deg);
+   }
+   
+   .offers-img-p-d {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+   }
+
+   .offers-info-d {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+   }
+
+   .offers-info-d h1 {
+      font-size: 1.65rem;
+      font-weight: 600;
+   }
+   
+   .offers-info-d h3 {
+      font-size: 1.15rem;
+      font-weight: 200;
+      margin-top: 0.35rem;
+   }
+
+   .offers-name-d {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-top: 4.5rem;
+   }
+
+   .view-more-link-d {
+      color: #E63946;
+      text-decoration: none;
+      border-bottom: 0.12rem #E63946 solid;
+   }
+
+   .view-more-offers-d {
+      font-size: 1.65rem;
+      margin-top: 5.75rem;
+      font-weight: 100;
    }
    
    /* Footer */
