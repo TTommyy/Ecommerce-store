@@ -1996,7 +1996,7 @@ input {
       transition: ease 300ms;
    }
 
-   .section-1 {
+   .nav, .nav-menu, .nav-products {
       display: none;
    }
    
@@ -2191,6 +2191,11 @@ input {
       margin-left: 3.8rem;
    }
 
+   .nav-b1 li {
+      position: relative;
+      padding-bottom: 0.3rem;
+   }
+
    .nav-b1-li {
       display: inline-block;
       font-size: 0.75rem;
@@ -2205,6 +2210,7 @@ input {
       font-weight: 100;
       color: #fff;
       margin-left: 2.75rem;
+      cursor: pointer;
    }
 
    .nav-b1-ul {
@@ -2231,6 +2237,23 @@ input {
       margin-right: 2rem;
       cursor: pointer;
    }
+
+   .nav-b1 li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.1rem;
+      background: #E63946;
+      bottom: 0;
+      left: 0;
+      transform-origin: left;
+      transition: ease 300ms;
+      transform: scale(0);
+   }
+   
+   .nav-b1 li:hover::after {
+      transform: scale(1);
+   }
    
    /* Sign in section */
    .sign-in {
@@ -2238,9 +2261,12 @@ input {
       width: 100%;
       height: 100vh;
       background: #131313;
-      z-index: 15;
+      z-index: 19;
       transition: ease 300ms;
       right: -100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr;
    }
 
    .section-b1 {
@@ -2253,49 +2279,64 @@ input {
    
    .sign-in-back {
       position: absolute;
-      left: 4%;
-      top: 2.6%;
+      left: 2.5%;
+      top: 5%;
+      cursor: pointer;
    }
    
    .sign-in-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: initial;
+      text-align: initial;
+      justify-content: center;
       width: 100%;
-      height: 49vh;
+      height: 100vh;
+      padding-left: 22%;
+   }
+
+   .sign-in-sep {
+      width: 3px;
+      height: 17.1rem;
+      border-radius: 15px;
+      background: #434343;
+      position: absolute;
+      margin-left: 7%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0.7rem;
    }
    
    .sign-in-text h1 {
-      font-size: 3.75rem;
+      font-size: 5.3rem;
       color: #fff;
       font-family: 'Lobster Two', cursive;
       font-weight: 100;
       letter-spacing: 4px;
-      margin-top: 4.5rem;
+      margin-top: 0rem;
    }
    
    .sign-in-text p {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       color: #fff;
       font-weight: 100;
-      margin-left: 10%;
-      margin-right: 10%;
-      line-height: 27px;
+      margin-left: 0%;
+      margin-right: 0%;
+      line-height: 30px;
       letter-spacing: 1px;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
    }
    
    .sign-ing-button {
-      width: 9rem;
-      height: 2.75rem;
+      width: 9.7rem;
+      height: 2.88rem;
       background: #E63946;
       border-radius: 3px;
       border: 1px #E63946 solid;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #fff;
       font-weight: 100;
-      margin-top: 1.88rem;
+      margin-top: 2.85rem;
    }
    
    .sign-in-input {
@@ -2304,7 +2345,7 @@ input {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 51vh;
+      height: 100vh;
    }
    
    .sign-in-input-2 {
@@ -2312,15 +2353,15 @@ input {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 89%;
-      height: 43vh;
+      width: 58%;
+      height: 55vh;
       background: #272727;
       border-radius: 15px;
    }
    
    #sign-in-email {
       width: 84%;
-      height: 3rem;
+      height: 3.5rem;
       border: none;
       font-family: 'Poppins', sans-serif;
       font-size: 0.88rem;
@@ -2336,7 +2377,7 @@ input {
    
    #sign-in-password {
       width: 84%;
-      height: 3rem;
+      height: 3.5rem;
       border: none;
       font-family: 'Poppins', sans-serif;
       font-size: 0.88rem;
@@ -2353,20 +2394,20 @@ input {
    
    .sign-in-input-btn {
       width: 84%;
-      height: 3rem;
+      height: 3.3rem;
       border-radius: 7px;
       border: 1px #E63946 solid;
       background: #E63946;
-      font-size: 1.1rem;
+      font-size: 1.18rem;
       font-weight: 100;
       color: #fff;
-      margin-top: 1.78rem;
+      margin-top: 2rem;
    }
    
    .sign-in-input h3 {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       font-weight: 100;
-      margin-top: 0.67rem;
+      margin-top: 1rem;
       font-weight: 100;
    }
    
@@ -2381,9 +2422,12 @@ input {
       width: 100%;
       height: 100vh;
       background: #131313;
-      z-index: 15;
+      z-index: 19;
       transition: ease 300ms;
       top: -100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr;
    }
    
    .sign-up-active {
@@ -2392,49 +2436,64 @@ input {
    
    .sign-up-back {
       position: absolute;
-      left: 4%;
-      top: 2.6%;
+      left: 2.5%;
+      top: 5%;
+      cursor: pointer;
+   }
+
+   .sign-up-sep {
+      width: 3px;
+      height: 17.1rem;
+      border-radius: 15px;
+      background: #434343;
+      position: absolute;
+      margin-left: 7%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0.7rem;
    }
    
    .sign-up-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: initial;
+      text-align: initial;
+      justify-content: center;
       width: 100%;
-      height: 49vh;
+      height: 100vh;
+      padding-left: 22%;
    }
    
    .sign-up-text h1 {
-      font-size: 3.75rem;
+      font-size: 5.3rem;
       color: #fff;
       font-family: 'Lobster Two', cursive;
       font-weight: 100;
       letter-spacing: 4px;
-      margin-top: 4.5rem;
+      margin-top: 0rem;
    }
    
    .sign-up-text p {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       color: #fff;
       font-weight: 100;
-      margin-left: 10%;
-      margin-right: 10%;
-      line-height: 27px;
+      margin-left: 0%;
+      margin-right: 0%;
+      line-height: 30px;
       letter-spacing: 1px;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
    }
    
    .sign-up-button {
-      width: 9rem;
-      height: 2.75rem;
+      width: 9.7rem;
+      height: 2.88rem;
       background: #E63946;
       border-radius: 3px;
       border: 1px #E63946 solid;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #fff;
       font-weight: 100;
-      margin-top: 1.88rem;
+      margin-top: 2.85rem;
    }
    
    .sign-up-input {
@@ -2443,7 +2502,7 @@ input {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 48vh;
+      height: 100vh;
    }
    
    .sign-up-input-2 {
@@ -2451,8 +2510,8 @@ input {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 89%;
-      height: 51vh;
+      width: 58%;
+      height: 58vh;
       background: #272727;
       border-radius: 15px;
    }
@@ -2467,7 +2526,7 @@ input {
       border-radius: 7px;
       padding-left: 1rem;
       padding-right: 1rem;
-      margin-top: 0.8rem;
+      margin-top: 0.88rem;
    }
    
    #sign-up-email::placeholder {
@@ -2484,7 +2543,7 @@ input {
       border-radius: 7px;
       padding-left: 1rem;
       padding-right: 1rem;
-      margin-top: 0.8rem;
+
    }
    
    #sign-up-name::placeholder {
@@ -2501,7 +2560,7 @@ input {
       border-radius: 7px;
       padding-left: 1rem;
       padding-right: 1rem;
-      margin-top: 0.8rem;
+      margin-top: 0.88rem;
    }
    
    #sign-up-password::placeholder {
@@ -2517,13 +2576,13 @@ input {
       font-size: 1.1rem;
       font-weight: 100;
       color: #fff;
-      margin-top: 1.7rem;
+      margin-top: 1.85rem;
    }
    
    .sign-up-input h3 {
       font-size: 0.8rem;
       font-weight: 100;
-      margin-top: 0.67rem;
+      margin-top: 0.88rem;
       font-weight: 100;
    }
    
@@ -2552,7 +2611,7 @@ input {
    }
    
    .lp h1 {
-      font-size: 4rem;
+      font-size: 4.6rem;
       font-family: 'Lobster Two', cursive;
       letter-spacing: 0.3rem;
       color: #fff;
@@ -2561,12 +2620,12 @@ input {
    
    .lp p {
       color: #fff;
-      font-size: 0.77rem;
+      font-size: 0.88rem;
       letter-spacing: 0.1rem;
       line-height: 2.25rem;
       font-weight: 100;
-      margin-left: 7.25%;
-      margin-right: 7.25%;
+      margin-left: 24%;
+      margin-right: 24%;
       margin-top: 1.35rem;
    }
    
@@ -2579,48 +2638,48 @@ input {
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 34rem;
+      height: 36rem;
       flex-direction: column;
-      padding-left: 2.5rem;
+      padding-left: 20%;
    }
    
    .wwo-rect {
-      width: 22%;
-      height: 34rem;
+      width: 32.6%;
+      height: 36rem;
       background: #f1f1f1;
       position: absolute;
       z-index: -1;
-      left: 0%;
+      left: 8.5%;
    }
    
    .wwo h1 {
-      font-size: 2.6rem;
+      font-size: 3.45rem;
       font-weight: 500;
    }
    
    .wwo p {
-      font-size: 0.85rem;
-      line-height: 1.75rem;
+      font-size: 1rem;
+      line-height: 2.75rem;
       font-weight: 500;
-      margin-top: 2.5rem;
-      margin-right: 2rem;
+      margin-top: 2.25rem;
+      margin-right: 35%;
    }
    
    .wwo-sep {
-      width: 4rem;
-      height: 0.2rem;
+      width: 4.3rem;
+      height: 0.22rem;
       border-radius: 15px;
       background: #E63946;
-      margin-top: 1.8rem;
+      margin-top: 1.7rem;
    }
    
    .wwo-button {
-      width: 10rem;
-      height: 2.85rem;
+      width: 10.5rem;
+      height: 3.05rem;
       background: #E63946;
       border: 1px #E63946 solid;
       border-radius: 3px;
-      font-size: 1.12rem;
+      font-size: 1.15rem;
       font-weight: 400;
       margin-top: 2.53rem;
       color: #fff;
@@ -2633,7 +2692,7 @@ input {
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 38.65rem;
+      height: 94vh;
       background: #212121;
       padding-left: 21%;
       padding-right: 21%;
@@ -2641,10 +2700,11 @@ input {
    
    .test-img {
       margin-top: 3.4rem;
+      width: 7rem;
    }
    
    .test p {
-      font-size: 0.87rem;
+      font-size: 1rem;
       color: #fff;
       font-weight: 100;
       line-height: 2.6rem;
@@ -2653,21 +2713,21 @@ input {
    
    .test-q-l {
       position: absolute;
-      width: 1.5rem;
+      width: 2.1rem;
       left: 12%;
       margin-top: 11rem;
    }
    
    .test-q-r {
       position: absolute;
-      margin-top: 29.5rem;
-      width: 1.35rem;
-      right: 13%;
+      margin-top: 23.5rem;
+      width: 2.1rem;
+      right: 10%;
    }
    
    .test h3 {
       color: #D8D8D8;
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 100;
       margin-top: 4.65rem;
    }
@@ -2675,10 +2735,10 @@ input {
    /* Why choose us */
    .whyus {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 53% 47%;
+      grid-template-columns: 53% 47%;
+      grid-template-rows: 1fr;
       width: 100%;
-      height: 45.75rem;
+      height: 85vh;
       background: #131313;
    }
    
@@ -2688,7 +2748,7 @@ input {
       justify-content: center;
       width: 100%;
       height: 100%;
-      padding-left: 2rem;
+      padding-left: 8%;
    }
    
    .whyus-img {
@@ -2698,13 +2758,13 @@ input {
    }
    
    .whyus-info h1 {
-      font-size: 2.25rem;
+      font-size: 3.1rem;
       font-weight: 500;
       color: #fff;
    }
    
    .whyus-sep {
-      width: 3.5rem;
+      width: 4rem;
       height: 0.17rem;
       border-radius: 15px;
       background: #E63946;
@@ -2712,17 +2772,17 @@ input {
    }
    
    .whyus-info p {
-      font-size: 0.85rem;
-      line-height: 1.75rem;
+      font-size: 0.9rem;
+      line-height: 2.75rem;
       font-weight: 500;
       margin-top: 2.25rem;
       color: #fff;
+      margin-right: 15%;
    }
    
    /* Best offers section */
    .offers {
       display: flex;
-      flex-direction: column;
       align-items: center;
       width: 100%;
       height: 203.75rem;
@@ -2733,7 +2793,7 @@ input {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 70% 30%;
-      width: 84%;
+      width: 30%;
       height: 26.25rem;
       background: #fff;
       border-radius: 20px;

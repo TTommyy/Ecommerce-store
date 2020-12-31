@@ -42,7 +42,7 @@ function cont() {
          goBack.addEventListener("click", () => {
             productsMenu.classList.remove("products-open");
          });
-   
+
          // Sign in
          const signIn = document.querySelector(".sign-in");
          const signInLink = document.getElementById("sign-in-link");
@@ -94,6 +94,57 @@ function cont() {
             let windowPositionD = window.scrollY > 0;
             navD.classList.toggle("nav-b-active", windowPositionD);
          });
+
+         // Sign in
+         const signIn = document.querySelector(".sign-in");
+         const signInLink = document.getElementById("sign-in-link");
+         const signInImg = document.querySelector(".account-img");
+         const signInBack = document.querySelector(".sign-in-back");
+         const signUpBtn = document.querySelector(".sign-ing-button");
+         const signUp = document.querySelector(".sign-up2");
+         const signUpBack = document.querySelector(".sign-up-back");
+         const signInButton = document.querySelector(".sign-up-button");
+
+         signInLink.addEventListener("click", () => {
+            signIn.classList.toggle("sign-in-active");
+         });
+
+         signInImg.addEventListener("click", () => {
+            signIn.classList.toggle("sign-in-active");
+         });
+
+         signInBack.addEventListener("click", () => {
+            signIn.classList.remove("sign-in-active");
+         });
+
+         signUpBtn.addEventListener("click", () => {
+            signUp.classList.add("sign-up-active");
+            signIn.classList.remove("sign-in-active");
+         });
+
+         signUpBack.addEventListener("click", () => {
+            signUp.classList.remove("sign-up-active");
+         });
+
+         signInButton.addEventListener("click", () => {
+            signIn.classList.add("sign-in-active");
+            signUp.classList.remove("sign-up-active");
+         });
+
+         
+         // Button hover
+         const wwoButton = document.querySelector(".wwo-button");
+
+         wwoButton.addEventListener("mouseover", () => {
+            wwoButton.style.transform = "translateY(-4px)";
+            wwoButton.style.transition = "ease 500ms";
+         });
+
+         wwoButton.addEventListener("mouseout", () => {
+            wwoButton.style.transform = "translateY(4px)";
+            wwoButton.style.transition = "ease 500ms";
+         });
+   
 
       } else {
          console.log("Width > 1280px");
