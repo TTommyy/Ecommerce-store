@@ -43,6 +43,19 @@ function cont() {
             productsMenu.classList.remove("products-open");
          });
 
+         // Button hover
+         const wwoButton = document.querySelector(".lp-button");
+
+         wwoButton.addEventListener("mouseover", () => {
+            wwoButton.style.transform = "translateY(-4px)";
+            wwoButton.style.transition = "ease 500ms";
+         });
+
+         wwoButton.addEventListener("mouseout", () => {
+            wwoButton.style.transform = "translateY(4px)";
+            wwoButton.style.transition = "ease 500ms";
+         });
+   
          // Sign in
          const signIn = document.querySelector(".sign-in");
          const signInLink = document.getElementById("sign-in-link");
@@ -130,21 +143,6 @@ function cont() {
             signIn.classList.add("sign-in-active");
             signUp.classList.remove("sign-up-active");
          });
-
-         
-         // Button hover
-         const wwoButton = document.querySelector(".wwo-button");
-
-         wwoButton.addEventListener("mouseover", () => {
-            wwoButton.style.transform = "translateY(-4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
-
-         wwoButton.addEventListener("mouseout", () => {
-            wwoButton.style.transform = "translateY(4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
-   
 
       } else {
          console.log("Width > 1280px");

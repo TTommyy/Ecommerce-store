@@ -1,8 +1,10 @@
 function cont() {
    // Nav => solid background
    const nav = document.querySelector(".nav");
+   const navB = document.querySelector(".nav-b");
 
    nav.classList.add("scroll-nav");
+   navB.classList.add("nav-b-active");
 
    // Nav - burger
    const burger = document.querySelector(".burger-menu");
