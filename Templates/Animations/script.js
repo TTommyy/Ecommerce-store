@@ -95,19 +95,6 @@ function cont() {
             navD.classList.toggle("nav-b-active", windowPositionD);
          });
 
-         // Button hover
-         const wwoButton = document.querySelector(".wwo-button");
-
-         wwoButton.addEventListener("mouseover", () => {
-            wwoButton.style.transform = "translateY(-4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
-
-         wwoButton.addEventListener("mouseout", () => {
-            wwoButton.style.transform = "translateY(4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
-
          // Sign in
          const signIn = document.querySelector(".sign-in");
          const signInLink = document.getElementById("sign-in-link");

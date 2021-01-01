@@ -2242,7 +2242,20 @@ input {
       cursor: pointer;
    }
 
-   .nav-b1 li::after {
+   .nav-b1-li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.1rem;
+      background: #E63946;
+      bottom: 0;
+      left: 0;
+      transform-origin: left;
+      transition: ease 300ms;
+      transform: scale(0);
+   }
+
+   .nav-b1-product::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -2255,8 +2268,59 @@ input {
       transform: scale(0);
    }
    
-   .nav-b1 li:hover::after {
+   .nav-b1-li:hover::after {
       transform: scale(1);
+   }
+
+   .nav-b1-product:hover::after {
+      transform: scale(1);
+   }
+
+   /* Dropdown */
+   .dropdown ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      position: absolute;
+      width: 250%;
+      height: 10rem;
+      background: #282828;
+      margin-top: 30%;
+      opacity: 0;
+      z-index: 3;
+      pointer-events: none;
+   }
+   
+   .dropdown-arrow {
+      position: absolute;
+      width: 100%;
+      height: 1rem;
+      background: transparent;
+   }
+
+   .nav-b1-product:hover > .dropdown ul {
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   .dropdown-active ul {
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   .dropdown li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      transition: ease 300ms;
+   }
+
+   .dropdown li:hover {
+      background: #E63946;
    }
    
    /* Sign in section */
@@ -2872,7 +2936,7 @@ input {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      height: 160vh;
+      height: 162vh;
       background: #EFEFEF;
    }
 
@@ -2889,6 +2953,7 @@ input {
       justify-content: space-evenly;
       width: 100%;
       height: 100%;
+      margin-top: 1rem;
    }
 
    .offers-cards-p2 {
@@ -2896,6 +2961,7 @@ input {
       justify-content: space-evenly;
       width: 100%;
       height: 100%;
+      margin-top: 1.6rem;
    }
 
    .offers-cards-p1 > .offer-card-d:first-child {
@@ -2904,6 +2970,11 @@ input {
 
    .offers-cards-p2 > .offer-card-d:last-child {
       width: 38.4%;
+   }
+
+   .offers-cards-p2 > .offer-card-d:last-child::after {
+      width: 38.4%;
+      height: 17rem;
    }
 
    .offer-card-d {
@@ -2916,6 +2987,8 @@ input {
       border-radius: 20px;
       margin-top: 3.25rem;
       box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+      transition: ease 300ms;
+      cursor: pointer;
    }
 
    .offers-img-d {
@@ -2966,41 +3039,59 @@ input {
 
    .view-more-offers-d {
       font-size: 1.65rem;
-      margin-top: 5.75rem;
+      margin-top: 6.25rem;
       font-weight: 100;
+   }
+
+   .offers-card-button {
+      width: 10.5rem;
+      height: 3.05rem;
+      background: transparent;
+      border: transparent;
+      border-radius: 3px;
+      font-size: 1.15rem;
+      font-weight: 400;
+      margin-top: 2.53rem;
+      color: transparent;
+      position: absolute;
+      transition: ease 300ms;
+      cursor: initial;
+      margin-top: 6rem;
    }
    
    /* Footer */
    .footer {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 43% 37% 20%;
       align-items: center;
-      text-align: center;
+      text-align: initial;
       width: 100%;
-      height: 47rem;
+      height: 23rem;
       background: #131313;
    }
    
    .f-info {
-      margin-top: 3.82rem;
+      margin-top: 0rem;
+      margin-left: 15%;
    }
    
    .f-other {
-      margin-top: 4.1rem;
+      margin-top: 0rem;
    }
    
    .f-info h1 {
-      font-size: 1.1rem;
+      font-size: 1.31rem;
       color: #fff;
-      font-weight: 300;
-      margin-top: 2.15rem;
+      font-weight: 100;
+      margin-top: 2.5rem;
    }
    
    .f-other h1 {
-      font-size: 1.1rem;
+      font-size: 1.31rem;
       color: #fff;
       font-weight: 100;
-      margin-top: 2.15rem;
+      margin-top: 2.5rem;
    }
    
    .f-socials {
@@ -3009,19 +3100,34 @@ input {
       justify-content: space-evenly;
       width: 11.5rem;
       height: 2.5rem;
-      margin-top: 6.2rem;
+      margin-top: 72%;
    }
    
    .f-fb {
       width: 1.7em;
    }
+
+   .f-fb:hover {
+      filter: opacity(85%);
+      transition: ease 300ms;
+   }
    
    .f-twitter {
       width: 1.7em;
    }
+
+   .f-twitter:hover {
+      filter: opacity(85%);
+      transition: ease 300ms;
+   }
    
    .f-ig {
       width: 1.7em;
+   }
+
+   .f-ig:hover {
+      filter: opacity(85%);
+      transition: ease 300ms;
    }
    
    /* ACCESSORIES PAGE - MOBILE */
