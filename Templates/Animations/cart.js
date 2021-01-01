@@ -56,6 +56,25 @@ function cont() {
       price.innerHTML = "$59.99";
       couponDel.classList.remove("coupon-cancel");
    });
+
+   function qDesktop() { // Media query for desktop
+      let mediaDesktop = window.matchMedia("(min-width: 1025px)");
+      let mediaDesktop2 = window.matchMedia("(max-width: 1280px)");
+
+      if (mediaDesktop.matches && mediaDesktop2.matches) {
+
+         // Nav - background
+         const navD = document.querySelector(".nav-b");
+   
+         window.addEventListener("scroll", () => {
+            let windowPositionD = window.scrollY > 0;
+            navD.classList.toggle("nav-b-active", windowPositionD);
+         });
+
+      } else {
+         console.log("Width > 1280px");
+      }
+   }
 }
 
 cont()
