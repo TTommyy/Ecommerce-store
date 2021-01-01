@@ -1835,6 +1835,10 @@ input {
   margin-top: 3.85rem;
 }
 
+.contact-info-container {
+  padding-left: 6%;
+}
+
 .c-title {
   font-size: 2.4rem;
   font-weight: 500;
@@ -3938,17 +3942,37 @@ input {
     margin-top: 3.85rem;
   }
 
+  .contact-info-container {
+    padding-left: 6%;
+  }
+
   .c-title {
-    font-size: 2.4rem;
+    font-size: 48px;
     font-weight: 500;
   }
 
   .c-info p {
-    font-size: 0.85rem;
+    font-size: 20px;
+    width: 678px;
     font-weight: 100;
     line-height: 2.4rem;
     margin-right: 2rem;
     margin-top: 1.25rem;
+  }
+
+  .info-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .c-input {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .contact-info-container {
+    grid-column: 2 / span 1;
   }
 
   .c-phone {
@@ -3964,19 +3988,19 @@ input {
   }
 
   .c-phone-p h2 {
-    font-size: 0.95rem;
+    font-size: 22px;
     font-weight: 300;
     margin-left: 2.6rem;
   }
 
   .c-email-p h2 {
-    font-size: 0.95rem;
+    font-size: 22px;
     font-weight: 300;
     margin-left: 2.6rem;
   }
 
   .c-address-p h2 {
-    font-size: 0.95rem;
+    font-size: 22px;
     font-weight: 300;
     margin-left: 2.6rem;
   }
@@ -4016,8 +4040,8 @@ input {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 4.9rem;
-    padding-left: 6%;
+    margin-top: 3rem;
+    padding-left: 12%;
   }
 
   #c-name {
