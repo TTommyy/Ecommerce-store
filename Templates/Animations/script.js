@@ -42,19 +42,6 @@ function cont() {
          goBack.addEventListener("click", () => {
             productsMenu.classList.remove("products-open");
          });
-
-         // Button hover
-         const wwoButton = document.querySelector(".lp-button");
-
-         wwoButton.addEventListener("mouseover", () => {
-            wwoButton.style.transform = "translateY(-4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
-
-         wwoButton.addEventListener("mouseout", () => {
-            wwoButton.style.transform = "translateY(4px)";
-            wwoButton.style.transition = "ease 500ms";
-         });
    
          // Sign in
          const signIn = document.querySelector(".sign-in");
@@ -106,6 +93,19 @@ function cont() {
          window.addEventListener("scroll", () => {
             let windowPositionD = window.scrollY > 0;
             navD.classList.toggle("nav-b-active", windowPositionD);
+         });
+
+         // Button hover
+         const wwoButton = document.querySelector(".wwo-button");
+
+         wwoButton.addEventListener("mouseover", () => {
+            wwoButton.style.transform = "translateY(-4px)";
+            wwoButton.style.transition = "ease 500ms";
+         });
+
+         wwoButton.addEventListener("mouseout", () => {
+            wwoButton.style.transform = "translateY(4px)";
+            wwoButton.style.transition = "ease 500ms";
          });
 
          // Sign in
